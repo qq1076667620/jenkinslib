@@ -7,10 +7,6 @@ def tools = new org.devops.tools()
 pipeline{
     //指定运行此流水线的节点
     agent { node { label "build"}}
-    
-    //string 字符串类型的参数, 例如:
-    parameters { string(name: 'DEPLOY_ENV', defaultValue: 'staging', description: '') }
-    
 
     //流水线的阶段
     stages{
