@@ -1,8 +1,8 @@
 #!groovy
 
-@Library('jenkinslib') _
+@Library('jenkinslib') _     
 
-def tools = new org.devops.tools()
+def mytools = new org.devops.tools()
 
 pipeline{
     //指定运行此流水线的节点
