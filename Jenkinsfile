@@ -15,6 +15,7 @@ pipeline{
             steps{
                 script{
                     println("获取代码")
+                    tools.PrintMes("获取代码",'green')
                     input id: 'Test', message: '是否继续', ok: '是', parameters: [choice(choices: ['是', '否'], name: '是否继续')], submitter: 'admin'
                 }
             }
@@ -24,7 +25,8 @@ pipeline{
             steps{
                 script{
                      println("运行构建")
-
+                     tools.PrintMes("运行构建",'green')
+                        
                 }
             }    
         }
