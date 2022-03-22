@@ -29,7 +29,6 @@ pipeline{
                 script{
                      println("运行构建")
 
-                     tools.PrintMes("this is my lib")
                 }
             }    
         }
