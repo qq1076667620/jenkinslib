@@ -3,9 +3,12 @@
 @Library('jenkinslibrary@master') _
 
 def build = new org.devops.build()
+def deploy = new org.devops.deploy()
+
 
 String buildType = "${env.buildType}"
 String buildShell = "${env.buildShell}"
+String deployHosts = "${env.deployHosts}"
 
 pipeline{
   agent { node { label "master"}}
