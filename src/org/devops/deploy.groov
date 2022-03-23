@@ -1,0 +1,9 @@
+package org.devops
+
+//ansible
+
+def Ansibledeploy(hosts,func){
+    sh" ansible ${func} ${hosts}"
+
+
+}
